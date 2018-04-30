@@ -1,0 +1,81 @@
+
+2/9/18, 9:50:31 AM - ERROR: Download of "https://wa4e.com/tsugi/admin/key/index.php",
+	referenced from "https://wa4e.com",
+	failed with error code -1100 (File does not exist.)
+2/9/18, 9:50:35 AM - ERROR: Download of "https://wa4e.com/arrays/",
+	referenced from "https://wa4e.com/code",
+	failed with error code -1100 (File does not exist.)
+2/9/18, 9:50:35 AM - ERROR: Download of "https://wa4e.com/crack/",
+	referenced from "https://wa4e.com/code",
+	failed with error code -1100 (File does not exist.)
+2/9/18, 9:50:36 AM - ERROR: Download of "https://wa4e.com/crud/",
+	referenced from "https://wa4e.com/code",
+	failed with error code -1100 (File does not exist.)
+2/9/18, 9:50:36 AM - ERROR: Download of "https://wa4e.com/css/",
+	referenced from "https://wa4e.com/code",
+	failed with error code -1100 (File does not exist.)
+2/9/18, 9:50:37 AM - ERROR: Download of "https://wa4e.com/download.txt",
+	referenced from "https://wa4e.com/code",
+	failed with error code -1100 (File does not exist.)
+2/9/18, 9:50:37 AM - ERROR: Download of "https://wa4e.com/forms/",
+	referenced from "https://wa4e.com/code",
+	failed with error code -1100 (File does not exist.)
+2/9/18, 9:50:37 AM - ERROR: Download of "https://wa4e.com/handlebars/",
+	referenced from "https://wa4e.com/code",
+	failed with error code -1100 (File does not exist.)
+2/9/18, 9:50:37 AM - ERROR: Download of "https://wa4e.com/javascript-objects/",
+	referenced from "https://wa4e.com/code",
+	failed with error code -1100 (File does not exist.)
+2/9/18, 9:50:37 AM - ERROR: Download of "https://wa4e.com/html/",
+	referenced from "https://wa4e.com/code",
+	failed with error code -1100 (File does not exist.)
+2/9/18, 9:50:37 AM - ERROR: Download of "https://wa4e.com/javascript/",
+	referenced from "https://wa4e.com/code",
+	failed with error code -1100 (File does not exist.)
+2/9/18, 9:50:37 AM - ERROR: Download of "https://wa4e.com/jquery-01/",
+	referenced from "https://wa4e.com/code",
+	failed with error code -1100 (File does not exist.)
+2/9/18, 9:50:38 AM - ERROR: Download of "https://wa4e.com/old/",
+	referenced from "https://wa4e.com/code",
+	failed with error code -1100 (File does not exist.)
+2/9/18, 9:50:38 AM - ERROR: Download of "https://wa4e.com/json-02-chat/",
+	referenced from "https://wa4e.com/code",
+	failed with error code -1100 (File does not exist.)
+2/9/18, 9:50:38 AM - ERROR: Download of "https://wa4e.com/json-01/",
+	referenced from "https://wa4e.com/code",
+	failed with error code -1100 (File does not exist.)
+2/9/18, 9:50:38 AM - ERROR: Download of "https://wa4e.com/json-03-crud/",
+	referenced from "https://wa4e.com/code",
+	failed with error code -1100 (File does not exist.)
+2/9/18, 9:50:38 AM - ERROR: Download of "https://wa4e.com/objects/",
+	referenced from "https://wa4e.com/code",
+	failed with error code -1100 (File does not exist.)
+2/9/18, 9:50:38 AM - ERROR: Download of "https://wa4e.com/overview/",
+	referenced from "https://wa4e.com/code",
+	failed with error code -1100 (File does not exist.)
+2/9/18, 9:50:38 AM - ERROR: Download of "https://wa4e.com/pdo/",
+	referenced from "https://wa4e.com/code",
+	failed with error code -1100 (File does not exist.)
+2/9/18, 9:50:39 AM - ERROR: Download of "https://wa4e.com/php-services/",
+	referenced from "https://wa4e.com/code",
+	failed with error code -1100 (File does not exist.)
+2/9/18, 9:50:39 AM - ERROR: Download of "https://wa4e.com/print/",
+	referenced from "https://wa4e.com/code",
+	failed with error code -1100 (File does not exist.)
+2/9/18, 9:50:39 AM - ERROR: Download of "https://wa4e.com/route/",
+	referenced from "https://wa4e.com/code",
+	failed with error code -1100 (File does not exist.)
+2/9/18, 9:50:39 AM - ERROR: Download of "https://wa4e.com/rps/",
+	referenced from "https://wa4e.com/code",
+	failed with error code -1100 (File does not exist.)
+2/9/18, 9:50:39 AM - ERROR: Download of "https://wa4e.com/sessions/",
+	referenced from "https://wa4e.com/code",
+	failed with error code -1100 (File does not exist.)
+2/9/18, 9:50:39 AM - ERROR: Download of "https://wa4e.com/zips.sh",
+	referenced from "https://wa4e.com/code",
+	failed with error code -1100 (File does not exist.)
+2/9/18, 9:50:42 AM - ERROR: Download of "https://wa4e.com/rrc/",
+	referenced from "https://wa4e.com/code",
+	failed with error code -1100 (File does not exist.)
+
+---------------------

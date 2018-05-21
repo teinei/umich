@@ -1,0 +1,112 @@
+CREATE DATABASE rise;
+GRANT ALL ON rise.* TO 'joe'@'localhost' IDENTIFIED BY 'zap';
+GRANT ALL ON rise.* TO 'joe'@'127.0.0.1' IDENTIFIED BY 'zap';
+//create database
+
+CREATE TABLE teachers (
+  teacher_id INTEGER NOT NULL AUTO_INCREMENT,
+  teacher_name VARCHAR(255),
+  PRIMARY KEY(teacher_id)
+) ENGINE = InnoDB;
+
+CREATE TABLE students (
+  student_id INTEGER NOT NULL AUTO_INCREMENT,
+  student_name VARCHAR(255),
+  teacher_id INTEGER,
+  class_id INTEGER,
+
+  PRIMARY KEY(student_id),
+  INDEX USING BTREE (student_name),
+
+  CONSTRAINT FOREIGN KEY (teacher_id)
+    REFERENCES teachers (teacher_id)
+    ON DELETE CASCADE ON UPDATE CASCADE,
+  
+  CONSTRAINT FOREIGN KEY (class_id)
+    REFERENCES classes (class_id)
+	ON DELETE CASCADE ON UPDATE CASCADE
+	
+) ENGINE = InnoDB;
+
+CREATE TABLE classes(
+  class_id INTEGER NOT NULL AUTO_INCREMENT,
+  class_stage VARCHAR(255),
+  class_number INTEGER,
+  d_teacher INTEGER,
+  co_teacher INTEGER,
+  riseup DATE,
+  graduate DATE,
+  
+  PRIMARY KEY(class_id),
+  INDEX USING BTREE(class_number),
+  
+  CONSTRAINT FOREIGN KEY (d_teacher)
+    REFERENCES teachers(teacher_id)
+	ON DELETE CASCADE ON UPDATE CASCADE,
+  CONSTRAINT FOREIGN KEY (co_teacher)
+    REFERENCES teachers(teacher_id)
+	ON DELETE CASCADE ON UPDATE CASCADE
+  
+) ENGINE = InnoDB;
+
+CREATE TABLE openlessons(
+  open_id INTEGER NOT NULL AUTO_INCREMENT,
+  open_date DATE,
+  ordinal INTEGER,
+  class_number INTEGER,
+  class_id INTEGER,
+  percent FLOAT,
+  issues TEXT,
+  
+   PRIMARY KEY(open_id),
+   INDEX USING BTREE(open_date),
+   
+   CONSTRAINT FOREIGN KEY (class_id)
+    REFERENCES classes(class_id)
+	ON DELETE CASCADE ON UPDATE CASCADE
+  
+) ENGINE = InnoDB;
+
+CREATE TABLE open_lesson_scores(
+  id INTEGER NOT NULL AUTO_INCREMENT,
+  student_id INTEGER,
+  class_number INTEGER,
+  date DATE,
+  ordinal INTEGER,
+  q1 INTEGER,
+  q2 INTEGER,
+  q3 INTEGER,
+  q4 INTEGER,
+  q5 INTEGER,
+  
+  PRIMARY KEY(id),
+  INDEX USING BTREE(class_number),
+  
+  CONSTRAINT FOREIGN KEY (student_id)
+	REFERENCES students (student_id)
+	ON DELETE CASCADE ON UPDATE CASCADE
+) ENGINE = InnoDB;
+
+CREATE TABLE suggests(
+  id INTEGER NOT NULL AUTO_INCREMENT,
+  class_id INTEGER,
+  class_number INTEGER,
+  date DATE,
+  
+  ordinal INTEGER,
+  text1 TEXT,
+  text2 TEXT,
+  text3 TEXT,
+  check1 INTEGER,
+  check2 INTEGER,
+  check3 INTEGER,
+  check4 INTEGER,
+  
+  PRIMARY KEY(id),
+  INDEX USING BTREE(class_number),
+  
+  CONSTRAINT FOREIGN KEY(class_id)
+    REFERENCES students(student_id)
+	ON DELETE CASCADE ON UPDATE CASCADE
+  
+) ENGINE = InnoDB;
